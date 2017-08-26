@@ -16,6 +16,7 @@ body > input[type="radio"] {
 }
 a {
   color: #ffffff;
+  cursor: pointer;
   text-decoration: none;
 }
 .visually-hidden {
@@ -55,7 +56,6 @@ a {
 .btn:active {
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: 0 2px 2px 0 #ac1000 inset;
-  outline: 1px solid silver;
 }
 .site-wrapper {
   min-width: 1200px;
@@ -91,8 +91,9 @@ a {
 .main-menu .item {
   list-style-type: none;
   position: relative;
+  border-radius: 15px;
 }
-.main-menu .item > a {
+.item > a {
   font-weight: bold;
   line-height: 30px;
   text-align: center;
@@ -109,7 +110,7 @@ a {
   background-color: #f7f6f3;
   border-radius: 15px;
 }
-.main-menu .item:active > a {
+.item > a:active {
   box-shadow: 0 2px 2px 0 #696969 inset;
 }
 .main-menu > li:hover .sub-menu,
@@ -141,38 +142,38 @@ a {
   width: 144px;
   background-color: transparent;
 }
-.main-menu .sub-menu a {
+.sub-menu a {
   color: #323232;
   text-decoration: none;
 }
-.main-menu .sub-menu hr {
+.sub-menu hr {
   border-top: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   width: 90%;
 }
-.main-menu .sub-menu .new {
+.sub-menu .new {
   font-weight: bold;
   line-height: 33px;
   min-height: 33px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-.main-menu .sub-menu .sub-item {
+.sub-menu .sub-item {
   line-height: 28px;
   min-height: 28px;
   padding-top: 5px;
   padding-left: 20px;
   padding-right: 20px;
 }
-.main-menu .sub-menu .sub-item:last-child {
+.sub-menu .sub-item:last-child {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.main-menu .sub-menu .sub-item:hover {
+.sub-menu .sub-item:hover {
   background-color: #fbded7;
 }
-.main-menu .sub-menu .sub-item:active {
+.sub-menu .sub-item:active {
   background-color: #f6b5a5;
 }
 .main-header .user-block {
@@ -223,7 +224,7 @@ a {
   background-position: -5px -5px;
 }
 .user-block .basket {
-  padding-right: 5px;
+  padding-right: 15px;
   padding-left: 40px;
   min-width: 55px;
 }
@@ -231,6 +232,21 @@ a {
   top: 6px;
   left: 10px;
   background-position: -32px -5px;
+}
+.user-block .full-basket {
+  padding-right: 15px;
+  padding-left: 40px;
+  min-width: 55px;
+  background-color: #f7f6f3;
+  color: #323232;
+}
+.user-block .full-basket::before {
+  top: 6px;
+  left: 10px;
+  background-position: -152px -5px;
+}
+.user-block .basket:hover::before {
+  background-position: -152px -5px;
 }
 .user-block .btn-user:hover {
   background-color: #f7f6f3;
@@ -341,9 +357,6 @@ sign-in .block-sign:hover {
   color: #e84d37;
   text-decoration-color: #ffbc9e;
 }
-.user-block .basket:hover::before {
-  background-position: -152px -5px;
-}
 .main-block .slider {
   position: relative;
   display: flex;
@@ -422,6 +435,9 @@ sign-in .block-sign:hover {
 .btn-slide-2:checked ~ .site-wrapper label[for="btn-2"],
 .btn-slide-3:checked ~ .site-wrapper label[for="btn-3"] {
   background-color: #ffffff;
+}
+.slider-controls label:hover  {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 #btn-1:checked ~ .site-wrapper .btn-user {
   background-color: #9db2a7;
@@ -811,6 +827,13 @@ sign-in .block-sign:hover {
 }
 .modal-content-show {
   display: block;
+  animation-name: move-popup;
+  animation-duration: 0.5s;
+}
+@keyframes move-popup {
+  0% { transform: translateY(-1000px) translate(-50%, -50%); }
+  80% { transform: translateY(35px) translate(-50%, -50%); }
+  100% { transform: translateY(0px) translate(-50%, -50%); }
 }
 .modal-content .btn-close {
   position: absolute;
@@ -894,4 +917,37 @@ sign-in .block-sign:hover {
 }
 .modal-overlay-show {
   display: block;
+}
+/* Стили для страницы каталога */
+.main-menu .active {
+  background-color: #d07058;
+  text-decoration: none;
+}
+.main-menu > .active:hover > a {
+  color: #ffffff;
+  background-color: #d07058;
+}
+.main-menu .active:hover {
+  color: #ffffff;
+  background-color: #d07058;
+}
+.active > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.container-basket {
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  color: #323232;
+  margin-left: 50px;
+  height: 240px;
+  width: 550px;
+}
+.container-basket .products-basket {
+  border: none;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin: 0 auto;
+  height: 170px;
+  width: 520px;
 }

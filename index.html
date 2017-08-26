@@ -27,7 +27,7 @@
               <li>
                 <hr>
               </li>
-              <li class="sub-item"><a href="#">Сливочное</a>
+              <li class="sub-item"><a href="catalog.html">Сливочное</a>
               </li>
               <li class="sub-item"><a href="#">Щербеты</a>
               </li>
@@ -46,13 +46,13 @@
       <ul class="user-block">
         <li class="btn-user search">Поиск
           <form class="block-search" method="post">
-           <label class="visually-hidden" for="search">Что ищем?</label>
+            <label class="visually-hidden" for="search">Что ищем?</label>
             <input id="search" class="search-line" type="text" placeholder="Что ищем?">
           </form>
         </li>
         <li class="btn-user sign-in">Вход
           <form class="block-sign" method="post">
-           <label class="visually-hidden" for="email">Электронная почта</label>
+            <label class="visually-hidden" for="email">Электронная почта</label>
             <input id="email" type="email" name="email" placeholder="Электронная почта">
             <label class="visually-hidden" for="password">Пароль</label>
             <input id="password" type="password" name="password" placeholder="Пароль">
@@ -172,7 +172,7 @@
             <h2>Рассылка новостей.</h2>
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="form-subscribe" method="post">
-             <label class="visually-hidden" for="email-spam">Электронная почта</label>
+              <label class="visually-hidden" for="email-spam">Электронная почта</label>
               <input id="email-spam" type="text" name="email-spam" placeholder="Электронная почта">
               <input class="btn" type="submit" value="Отправить">
             </form>
@@ -236,15 +236,15 @@
     var overlay = document.querySelector(".modal-overlay");
     var close = document.querySelector(".btn-close");
     link.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-content-show");
-      overlay.classList.add("modal-overlay-show");
-    });                           
-    close.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-content-show");
-      overlay.classList.remove("modal-overlay-show");
-    });
+        evt.preventDefault();
+        popup.classList.add("modal-content-show");
+        overlay.classList.add("modal-overlay-show");
+      });
+      close.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-content-show");
+        overlay.classList.remove("modal-overlay-show");
+      });
   </script>
 </body>
 

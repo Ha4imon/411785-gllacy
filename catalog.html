@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Магазин мороженного</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+  <header class="main-header container">
+    <a href="index.html">
+      <img src="img/logo-glacy.png" width="154" height="64" alt="Логотип магазина мороженным Gllacy">
+    </a>
+    <nav>
+      <ul class="main-menu">
+        <li class="item active"><a href="#">Каталог</a>
+          <ul class="sub-menu">
+            <li class="sub-item new"><a href="#">Новинки</a>
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li class="sub-item active"><a>Сливочное</a>
+            </li>
+            <li class="sub-item"><a href="#">Щербеты</a>
+            </li>
+            <li class="sub-item"><a href="#">Фруктовый лед</a>
+            </li>
+            <li class="sub-item"><a href="#">Мелорин</a>
+            </li>
+          </ul>
+        </li>
+        <li class="item"><a href="#">Доставка и оплата</a>
+        </li>
+        <li class="item"><a href="#">О компании</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="user-block">
+      <li class="btn-user search">Поиск
+        <form class="block-search" method="post">
+          <label class="visually-hidden" for="search">Что ищем?</label>
+          <input id="search" class="search-line" type="text" placeholder="Что ищем?">
+        </form>
+      </li>
+      <li class="btn-user sign-in">Вход
+        <form class="block-sign" method="post">
+          <label class="visually-hidden" for="email">Электронная почта</label>
+          <input id="email" type="email" name="email" placeholder="Электронная почта">
+          <label class="visually-hidden" for="password">Пароль</label>
+          <input id="password" type="password" name="password" placeholder="Пароль">
+          <div class="block-entery">
+            <input class="btn" type="submit" value="Войти">
+            <div class="block-help">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>
+          </div>
+        </form>
+      </li>
+      <li class="btn-user full-basket">2 товара
+      </li>
+    </ul>
+  </header>
+  <main>
+    <div class="container-basket">
+       <table class="products-basket">
+        <tr>
+          <td>Удалить</td>
+          <td><img src="img/ice-cream-basket1.png" height="33" width="33" alt=""></td>
+          <td>Пломбир с апельсиновым джемом</td>
+          <td>1,5 кг</td>
+          <td>х</td>
+          <td>200 руб.</td>
+          <td>300 руб.</td>
+        </tr>
+        <tr>
+          <td>Удалить</td>
+          <td><img src="img/ice-cream-basket2.png" height="33" width="33" alt=""></td>
+          <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+          <td>1,5 кг</td>
+          <td>х</td>
+          <td>300 руб.</td>
+          <td>450 руб.</td>
+        </tr>
+        <tr>
+          <td>Итого:</td>
+          <td>750 руб.</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="social-networks">
+      <a class="social-btn twitter" href="#">Твиттер</a>
+      <a class="social-btn inst" href="#">Инстаграм</a>
+      <a class="social-btn fb" href="#">Фейсбук</a>
+      <a class="social-btn vk" href="#">Вк</a>
+    </div>
+    <div class="other-info">
+      <p class="tag suppliers"><a href="#">Для поставщиков</a>
+      </p>
+      <p class="tag"><a href="#">Наши документы</a>
+      </p>
+      <p class="tag"><a href="#">О производстве</a>
+      </p>
+      <p class="tag"><a href="#">Экологические стандарты</a>
+      </p>
+    </div>
+    <div class="block-academy">
+      <img src="img/html-academy.png" height="38" width="108" alt="Логотип html-academy">
+      <p class="text">Сделано в <a class="html-academy">HTML Academy</a> © 2017</p>
+    </div>
+  </footer>
+</body>
+
+</html>
+
