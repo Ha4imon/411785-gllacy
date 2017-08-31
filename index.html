@@ -16,7 +16,7 @@
   <div class="site-wrapper">
     <header class="main-header container">
       <a>
-        <img src="img/logo-glacy.png" width="154" height="64" alt="Логотип магазина мороженным Gllacy">
+        <img src="img/logo-glacy.png" width="154" height="64" alt="Логотип магазина мороженного Gllacy">
       </a>
       <nav>
         <ul class="main-menu">
@@ -57,7 +57,7 @@
             <label class="visually-hidden" for="password">Пароль</label>
             <input id="password" type="password" name="password" placeholder="Пароль">
             <div class="block-entery">
-              <input class="btn" type="submit" value="Войти">
+              <button class="btn">Войти</button>
               <div class="block-help">
                 <a href="#">Забыли пароль?</a>
                 <a href="#">Новая регистрация</a>
@@ -70,10 +70,10 @@
     </header>
 
     <main class="container main-block">
+      <p class="operating-mode">С 10 до 20, ежедневно
+        <br><span class="phone">8 912 450-25-25</span>
+      </p>
       <div class="slider">
-        <p class="operating-mode">С 10 до 20, ежедневно
-          <br><span class="phone">8 912 450-25-25</span>
-        </p>
         <div class="slide slide-1">
           <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
           <a class="btn" href="#">Давайте оба!</a>
@@ -97,51 +97,49 @@
         <section class="share-card jam">
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банкку малинового варенья бесплатно.</p>
-          <div class="btn"><a href="#">Хочу варенье!</a>
-          </div>
+          <a class="btn" href="#">Хочу варенье!</a>
         </section>
         <section class="share-card chocolate">
           <h2>Шоколадки даром!</h2>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <div class="btn"><a href="#">Хочу шоколадки!</a>
-          </div>
+          <a class="btn" href="#">Хочу шоколадки!</a>
         </section>
       </div>
 
       <section class="popular-products">
-        <h2>Популярные продукты</h2>
-        <a href="#">
-          <article class="ice-cream">
+        <h2 class="visually-hidden">Популярные продукты</h2>
+        <article class="ice-cream">
+          <a href="#">
             <b class="price">310₽<span class="kg">/кг</span></b>
             <img class="image" src="img/hit-item1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <h2 class="name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
-            <a class="btn" href="#">Быстрый просмотр</a>
-          </article>
-        </a>
-        <a href="#">
-          <article class="ice-cream">
+            <h3 class="name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+          </a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </article>
+        <article class="ice-cream">
+          <a href="#">
             <b class="price">380₽<span class="kg">/кг</span></b>
             <img class="image" src="img/hit-item2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            <h2 class="name">Сливочно-кофейное с кусочками шоколада</h2>
-            <a class="btn" href="#">Быстрый просмотр</a>
-          </article>
-        </a>
-        <a href="#">
-          <article class="ice-cream">
+            <h3 class="name">Сливочно-кофейное с кусочками шоколада</h3>
+          </a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </article>
+        <article class="ice-cream">
+          <a href="#">
             <b class="price">355₽<span class="kg">/кг</span></b>
             <img class="image" src="img/hit-item3.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <h2 class="name">Сливочно-клубничное с присыпкой из белого шоколада</h2>
-            <a class="btn" href="#">Быстрый просмотр</a>
-          </article>
-        </a>
-        <a href="#">
-          <article class="ice-cream">
+            <h3 class="name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+          </a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </article>
+        <article class="ice-cream">
+          <a href="#">
             <b class="price">415₽<span class="kg">/кг</span></b>
             <img class="image" src="img/hit-item4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            <h2 class="name">Сливочное крем-брюле с карамельной подливкой</h2>
-            <a class="btn" href="#">Быстрый просмотр</a>
-          </article>
-        </a>
+            <h3 class="name">Сливочное крем-брюле с карамельной подливкой</h3>
+          </a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </article>
       </section>
 
       <section class="info-block">
@@ -157,20 +155,22 @@
             <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </div>
           <div class="dignity thermometer">
-            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            </p>
           </div>
         </div>
       </section>
 
       <div class="news-feed">
         <section class="block blog">
-          <h2><a htef="#">Новое в нашем блоге</a></h2>
+          <h2><a href="#">Новое в нашем блоге</a></h2>
           <h3 class="name"><a href="#">10 способов сервировки фркутовых щербетов к столу</a></h3>
         </section>
         <section class="block container-spam">
           <div class="spam">
             <h2>Рассылка новостей.</h2>
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+            </p>
             <form class="form-subscribe" method="post">
               <label class="visually-hidden" for="email-spam">Электронная почта</label>
               <input id="email-spam" type="text" name="email-spam" placeholder="Электронная почта">
@@ -182,8 +182,8 @@
     </main>
 
     <section class="map">
-      <h2>Контактная информация</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3019004980652!2d30.32228400058177!3d59.938716253851005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1503179330610" width="100%" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3019004980652!2d30.32228400058177!3d59.938716253851005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1503179330610" width="0" height="0" style="border:0" allowfullscreen></iframe>
       <noscript>
         <img src="img/map.jpg" height="430" width="1200" alt="Ищите нас на ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </noscript>
@@ -212,7 +212,7 @@
       </div>
       <div class="block-academy">
         <img src="img/html-academy.png" height="38" width="108" alt="Логотип html-academy">
-        <p class="text">Сделано в <a class="html-academy">HTML Academy</a> © 2017</p>
+        <p class="text">Сделано в <a class="html-academy" href="#">HTML Academy</a> © 2017</p>
       </div>
     </footer>
   </div>
@@ -236,15 +236,15 @@
     var overlay = document.querySelector(".modal-overlay");
     var close = document.querySelector(".btn-close");
     link.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-content-show");
-        overlay.classList.add("modal-overlay-show");
-      });
-      close.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-content-show");
-        overlay.classList.remove("modal-overlay-show");
-      });
+      evt.preventDefault();
+      popup.classList.add("modal-content-show");
+      overlay.classList.add("modal-overlay-show");
+    });
+    close.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-content-show");
+      overlay.classList.remove("modal-overlay-show");
+    });
   </script>
 </body>
 
