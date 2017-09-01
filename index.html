@@ -3,20 +3,20 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Магазин мороженного</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <title>Магазин мороженого</title>
+  <link href="css/min-style.css" rel="stylesheet" type="text/css">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
-  <input type="radio" id="btn-1" class="btn-slide-1" name="toggle" checked>
-  <input type="radio" id="btn-2" class="btn-slide-2" name="toggle">
-  <input type="radio" id="btn-3" class="btn-slide-3" name="toggle">
+  <input id="btn-1" class="btn-slide-1" name="toggle" type="radio" checked>
+  <input id="btn-2" class="btn-slide-2" name="toggle" type="radio">
+  <input id="btn-3" class="btn-slide-3" name="toggle" type="radio">
   <div class="site-wrapper">
     <header class="main-header container">
-      <a>
-        <img src="img/logo-glacy.png" width="154" height="64" alt="Логотип магазина мороженного Gllacy">
+      <a class="logo">
+        <img src="img/logo-glacy.png" width="154" height="64" alt="Логотип магазина мороженого Gllacy">
       </a>
       <nav>
         <ul class="main-menu">
@@ -106,7 +106,7 @@
         </section>
       </div>
 
-      <section class="popular-products">
+      <section class="catalog-product popular-products">
         <h2 class="visually-hidden">Популярные продукты</h2>
         <article class="ice-cream">
           <a href="#">
@@ -173,7 +173,7 @@
             </p>
             <form class="form-subscribe" method="post">
               <label class="visually-hidden" for="email-spam">Электронная почта</label>
-              <input id="email-spam" type="text" name="email-spam" placeholder="Электронная почта">
+              <input id="email-spam" name="email-spam" type="text" placeholder="Электронная почта">
               <input class="btn" type="submit" value="Отправить">
             </form>
           </div>
@@ -184,9 +184,6 @@
     <section class="map">
       <h2 class="visually-hidden">Контактная информация</h2>
       <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3019004980652!2d30.32228400058177!3d59.938716253851005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1503179330610" width="0" height="0" style="border:0" allowfullscreen></iframe>
-      <noscript>
-        <img src="img/map.jpg" height="430" width="1200" alt="Ищите нас на ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      </noscript>
       <div class="about-us">
         <address class="text-adress">Адрес главного офиса и офлайн магазина:<br><span class="adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></address>
         <address class="text-adress">Для заказов по телефону:<span class="phone">8 912 450-25-25</span>(с 10 до 20 ежедневно)</address>
@@ -212,7 +209,7 @@
       </div>
       <div class="block-academy">
         <img src="img/html-academy.png" height="38" width="108" alt="Логотип html-academy">
-        <p class="text">Сделано в <a class="html-academy" href="#">HTML Academy</a> © 2017</p>
+        <p class="text">Сделано в <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
       </div>
     </footer>
   </div>
@@ -230,23 +227,7 @@
     </form>
   </div>
   <div class="modal-overlay"></div>
-  <script>
-    var link = document.querySelector(".btn-about-us");
-    var popup = document.querySelector(".modal-content");
-    var overlay = document.querySelector(".modal-overlay");
-    var close = document.querySelector(".btn-close");
-    link.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-content-show");
-      overlay.classList.add("modal-overlay-show");
-    });
-    close.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-content-show");
-      overlay.classList.remove("modal-overlay-show");
-    });
-  </script>
+  <script src="js/min-popup.js"></script>
 </body>
 
 </html>
-
