@@ -1318,15 +1318,19 @@ sign-in .block-sign:hover {
   height: 70px;
   width: 235px;
 }
-.range-container label {
+.range-container p {
   font-size: 14px;
   line-height: 16px;
-  margin-left: 15px;
+  margin: 0 0 0 15px;
+}
+.range-container label {
+  cursor: pointer;
 }
 .range-container input[type="text"] {
   background-color: transparent;
   border: none;
   color: #ffffff;
+  text-align: right;
   width: 30px;
 }
 .range-container .range-controls {
